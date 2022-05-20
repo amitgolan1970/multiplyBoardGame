@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layoutDirection="ltr" android:textDirection="ltr"
+    tools:context=".CalculationActivity">
+
+    <EditText
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:id="@+id/etLeftId"
+        android:hint="\?" android:gravity="center"
+        android:maxLength="3"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:text="*" android:textSize="15dp" android:textColor="#0000FF"
+        android:padding="3dp"
+        android:layout_marginRight="10dp"/>
+
+    <EditText
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:maxLength="3"
+        android:id="@+id/etRightId"
+        android:hint="\?" android:gravity="center"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:id="@+id/tvAnswerId"
+        android:hint="=" android:textColor="#0000FF" android:padding="3dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:text="פתור"
+        android:gravity="center"
+        android:id="@+id/btnSolve"/>
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnGoBack"
+        android:text="חזרה"
+        android:gravity="center"/>
+
+</LinearLayout>

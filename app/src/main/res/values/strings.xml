@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Multiplication</string>
+    <string name="mult_board">לוח כפל</string>
+    <string name="help_solve">פתרון</string>
+    <string name="end_game">משחק נוסף</string>
+</resources>

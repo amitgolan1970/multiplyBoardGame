@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:textDirection="ltr" android:layoutDirection="ltr"
+    tools:context=".MultiplicationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layoutDirection="ltr"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/ivFront"
+            android:src="@mipmap/doraboots" android:layout_marginRight="10dp"
+            android:layout_gravity="left" android:padding="30dp"
+            />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_marginTop="40dp"
+            android:id="@+id/radioBtnMode"
+            >
+            <RadioButton android:id="@+id/begin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="מתחילים"
+                />
+            <RadioButton android:id="@+id/novice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="מתקדמים"
+                android:checked="true"
+                />
+            <RadioButton android:id="@+id/expert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="מומחים"
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:id="@+id/tvDisplay"
+            android:background="#aba"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp" android:textSize="18dp"
+            />
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/etAnswer"
+            android:maxLength="3" android:hint="="
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            />
+
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="15dp"
+            android:text="Go" android:id="@+id/btnGo"
+            android:src="@mipmap/m_id_btn"
+            />
+
+        <Button
+            android:layout_width="95dp"
+            android:layout_height="45dp"
+            android:id="@+id/btnMultBoardId"
+            android:text="@string/mult_board"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:id="@+id/tvInfoStats" android:textDirection="rtl"
+        android:background="#3E0000FF" android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+
+
+
+
+</LinearLayout>
